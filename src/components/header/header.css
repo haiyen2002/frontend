@@ -1,0 +1,99 @@
+.header {
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+.headerImg {
+    /* background-image: url('/client/public/assets/post/nhoi-long-voi-hinh-anh-tre-em-vung-cao-trong-gia-ret-2.png'); */
+    width: 100%;
+    height: calc(100vh - 54px);
+   background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+.slogan {
+    color: #eae7df;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.slogan h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.slogan h3 {
+    font-weight: 400;
+    color: var(--orange-color);
+    background-color: #d5d3c8;
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 10px 0;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .slogan {
+        width: 85%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .slogan h1 {
+        font-size: 30px;
+    }
+
+    .slogan h3 {
+        font-size: 18px;
+    }
+
+    .slogan p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .slogan h1 {
+        font-size: 22px;
+    }
+
+    .slogan h3 {
+        font-size: 14px;
+    }
+
+    .slogan p {
+        font-size: 12px;
+    }
+}
+
