@@ -19,7 +19,7 @@ export default function Post({post}) {
 
   useEffect(() => {  
         const fetchUser = async () => {
-          const res = await publicRequest.get(`user/find/${post.userId}`)
+          const res = await publicRequest.get(`/user/find/${post.userId}`)
           setUser(res.data)
         }
         fetchUser()
@@ -28,7 +28,7 @@ export default function Post({post}) {
   const likeHandler = async () => {
     if(currentUser) {
       try {
-         await axios.put(`https://chaothubay.herokuapp.com/api/post/${post._id}/like`,{userId : currentUser._id})
+         await publicRequest.put(`/post/${post._id}/like`,{userId : currentUser._id})
         
        } catch (error) {
          console.log(error);

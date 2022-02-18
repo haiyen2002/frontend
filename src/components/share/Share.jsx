@@ -69,11 +69,11 @@ export default function Share() {
             newPost.img = fileName;
             console.log(newPost);
             try {
-              await axios.post("https://chaothubay.herokuapp.com/api/upload", data);
+              await publicRequest.post("/upload", data);
             } catch (err) {}
           }
           try {
-            await axios.post("https://chaothubay.herokuapp.com/api/post/add", newPost);
+            await publicRequest.post("/post/add", newPost);
             window.location.reload();
           } catch (err) {}
         }else{

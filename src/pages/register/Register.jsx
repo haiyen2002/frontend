@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useRef} from 'react';
 import { useHistory } from 'react-router-dom';
+import { publicRequest } from '../../requestMethod';
 
 export default function Register() {
   const email = useRef()
@@ -21,7 +22,7 @@ export default function Register() {
       }
 
       try {
-        await axios.post("https://chaothubay.herokuapp.com/api/auth/register", user)
+        await publicRequest.post("/auth/register", user)
         history.push("/login")
       } catch (error) {
         console.log(error);

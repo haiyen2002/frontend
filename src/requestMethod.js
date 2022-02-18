@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = `${process.env.REACT_APP_API_URL}/api/`
+const BASE_URL = `${process.env.REACT_APP_API_URL}/`
 const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTY4ZjgwNWRlMWUxZGUwZTRlNDZiNiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY0MjY2Njg2MCwiZXhwIjoxNjQzNTMwODYwfQ.9wf_rDLg5U9rOPwRH_JfhyKXeD0otmuRk-NnUXzw_Go"
 
 
