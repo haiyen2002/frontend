@@ -37,13 +37,20 @@
 
 .nomalNews .post .boxText .title {
     margin: 10px 0;
-    overflow: hidden;
+    /* overflow: hidden;
     display: -webkit-box;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    word-wrap: break-word;
-    white-space: normal;
+    white-space: normal; */
+
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 .nomalNews .post .boxText .description {

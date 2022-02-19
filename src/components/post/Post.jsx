@@ -56,6 +56,9 @@ export default function Post({post}) {
           <button className='likeBtn' onClick={likeHandler}>like</button><span>{like}</span>
           <p className='author'>Tác giả: {user.username}</p>
       </div>
+      <div className='timeUpPost'>
+        <span>{post.createdAt}</span>
+      </div>
     </div>
   )
      
